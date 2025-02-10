@@ -1,0 +1,27 @@
+{
+    "stages": [
+        {
+            "id": "raw-materials",
+            "name": "Raw Materials",
+            "emissions": {
+                "scope1": 2.3,
+                "scope2": 1.5,
+                "scope3": 4.8
+            },
+            "technologies": [
+                {
+                    "name": "Regenerative Farming",
+                    "reduction": 0.7,
+                    "implementation": 0.65
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "from": "raw-materials",
+            "to": "processing",
+            "type": "linear"
+        }
+    ]
+}
