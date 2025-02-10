@@ -1,0 +1,21 @@
+/* Light Theme */
+[data-theme="light"] {
+    --background: #FFFFFF;
+    --surface: #F5F5F5;
+    --text-color: #212121;
+    --border-color: #E0E0E0;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --background: #121212;
+    --surface: #1E1E1E;
+    --text-color: #FFFFFF;
+    --border-color: #333333;
+}
+
+/* Theme Transitions */
+body {
+    transition: background-color var(--transition-speed),
+                color var(--transition-speed);
+}
