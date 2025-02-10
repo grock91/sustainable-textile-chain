@@ -1,0 +1,15 @@
+{
+    "cases": [
+        {
+            "id": "case1",
+            "title": "Organic Cotton Initiative",
+            "company": "Sustainable Textiles Co.",
+            "impact": {
+                "emissionReduction": "45%",
+                "waterSaved": "60%",
+                "implementation": "2023"
+            },
+            "description": "Implementation of regenerative farming practices..."
+        }
+    ]
+}
