@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive visualization of sustainable textile value chain">
+    <title>Sustainable Textile Value Chain</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    
+    <!-- External Dependencies -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Scripts -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-recycle"></i>
+                <span>Textile Value Chain</span>
+            </div>
+            <div class="nav-controls">
+                <button id="themeToggle" class="btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="calculatorToggle" class="btn">
+                    <i class="fas fa-calculator"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Filters Section -->
+        <section class="filters">
+            <div class="filter-group">
+                <label>View Mode</label>
+                <select id="viewMode">
+                    <option value="all">Complete Chain</option>
+                    <option value="cotton">Cotton Path</option>
+                    <option value="polyester">Polyester Path</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Emission Scope</label>
+                <select id="scopeFilter">
+                    <option value="all">All Scopes</option>
+                    <option value="scope1">Scope 1</option>
+                    <option value="scope2">Scope 2</option>
+                    <option value="scope3">Scope 3</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Value Chain Visualization -->
+        <section class="value-chain">
+            <div id="chainVisualization"></div>
+        </section>
+
+        <!-- Carbon Calculator Modal -->
+        <div id="calculatorModal" class="modal">
+            <!-- Calculator content -->
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/visualizations.js"></script>
+    <script src="assets/js/calculator.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
